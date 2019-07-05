@@ -39,6 +39,7 @@ function removeExclamationMarks(s) {
   return s.split('!').join('');
 }
 
+<<<<<<< HEAD
 console.log("Bye exclamation point!")
 //
 // **********************************************************************
@@ -130,3 +131,6 @@ friend [("Elle", "Alex", "Kaia")]
 friend [("Sam", "Cinda", "Nick")]
 friend [("Leon", "Jack", "Kate")]
 friend [("Sara", "Sheila", "Erica")]
+=======
+console.log ("Hello World!")
+>>>>>>> 4990fdad0f51ab8e4fc6f066aca98d8a4401b9f5
