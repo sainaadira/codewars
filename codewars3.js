@@ -39,8 +39,7 @@ function removeExclamationMarks(s) {
   return s.split('!').join('');
 }
 
-<<<<<<< HEAD
-console.log("Bye exclamation point!")
+console.log('Bye exclamation point!')
 //
 // **********************************************************************
 
@@ -62,9 +61,9 @@ function count(string) {
   }
 return results;
 }
-console.log(count("testing"));
+console.log(count('testing'));
 
-console.log(count(""));
+console.log(count(''));
 
 //
 // ***********************************************************************************
@@ -90,6 +89,7 @@ console.log(count(""));
 function removeSmallest(numbers) {
   let arrayResult = []
   let smallest = numbers[0];
+  // to get the values of the smallest numbers, i need to loop through the array
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] < smallest) {
      smallest = numbers[i];
@@ -98,6 +98,7 @@ function removeSmallest(numbers) {
   for (let j = 0; j < numbers.length; j++) {
     if (j !== numbers.indexOf(smallest)) {
      arrayResult.push(numbers[j]);
+      // the push method adds a value to the end of an array and returns the new length of an array-- mdn.com
     }
   }
       console.log(numbers.indexOf(smallest));
@@ -127,10 +128,9 @@ function friend(friends){
   // the elements that pass the test brought on by the function (mdn.com)
 }
 
-friend [("Elle", "Alex", "Kaia")]
-friend [("Sam", "Cinda", "Nick")]
-friend [("Leon", "Jack", "Kate")]
-friend [("Sara", "Sheila", "Erica")]
-=======
-console.log ("Hello World!")
->>>>>>> 4990fdad0f51ab8e4fc6f066aca98d8a4401b9f5
+friend [('Elle', 'Alex', 'Kaia')]
+friend [('Sam', 'Cinda', 'Nick')]
+friend [('Matt', 'Jack', 'Kate')]
+friend [('Sara', 'Sheila', 'Erica')]
+
+console.log ('Hello World!')
