@@ -15,8 +15,9 @@
 
 function abbrevName(name){
   name.toUpperCase()
-  let arr = name.split(" ")
+  let arr = name.split(' ')
   return `${arr[0][0].toUpperCase()}.${arr[1][0].toUpperCase()}`
+  // got help with this line but i am getting the capital letters with the period here
 }
 // ***************************************************************************************
 // https://www.codewars.com/kata/i-love-you-a-little-a-lot-passionately-dot-dot-dot-not-at-all/train/javascript
@@ -115,7 +116,7 @@ let hiddenWord = (num) => {
 // second attempt
 let hiddenWord = function(num) {
     let key = "oblietadnm";
-    return String(num).split("").map((a) => key[a]).join("")
+    return String(num).split('').map((a) => key[a]).join('')
 }
 
 //
