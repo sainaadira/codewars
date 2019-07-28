@@ -7,8 +7,10 @@
 
 function DNAStrand(dna) {
   let array = []
+  // starting off with an empty array
   for (let i = 0; i < dna.length; i++) {
     let strand = dna.charAt(i)
+    // to get the complemented strand i need to reassign AT and CG
     if (strand === "A") {
       strand = "T"
       array.push(strand)
@@ -79,13 +81,14 @@ function getCount(str) {
 
 // ******************************************************************************
 // https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript
-// Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
+// Complete the method/function so that it converts dash/underscore delimited words into camel casing.
+// The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
 
 
-function toCamelCase(str){
-let result = ""
-  for (let i=0; i<str.length; i++) {
-    if ( (str.charAt(i) == '-') || (str.charAt(i) == '_') ) {
+function toCamelCase(str) {
+  let result = ''
+  for (let i = 0; i < str.length; i++) {
+    if ((str.charAt(i) == '-') || (str.charAt(i) == '_')) {
       // The String object's charAt() method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string. (from MDN.com)
       i++
       if (i < str.length) {
@@ -114,13 +117,13 @@ let result = ""
 // You can assume that you will be given a string and array of equal length and both containing valid characters (A-Z, a-z, or 0-9).
 
 
-function scramble(str,arr){
+function scramble(str, arr) {
   let newArr = []
-  for(let i=0;i<str.length;i++){
+  for (let i = 0; i < str.length; i++) {
     newArr[arr[i]] = str[i]
   }
-  return newArr.join("")
+  return newArr.join('')
 }
 
-scramble('love', [0,3,1,2])
+scramble('love', [0, 3, 1, 2])
 // -> 'lveo'
